@@ -1,0 +1,325 @@
+body {
+  
+  /* display: flex;
+  align-items: center; 
+  justify-content: center;
+  ココセットで使うよ
+ 
+  /* background: linear-gradient(to bottom, white, black); */
+
+  /* font-family: 'Ropa Sans', sans-serif; */
+  font-family: 'helvetica', sans-serif;
+  /* display: inline !important; */
+  
+  /* height: 100%; */
+  /* width:100%; */
+  
+  overflow-y: hidden;
+  overflow-x :hidden; 
+
+  /* overflow-x: scroll; */
+  /* width: 100%; */
+
+  /* min-height: 600px;
+  min-width: 900px; */
+
+  /* background-image:url(../photos/10.jpeg); */
+  background-size:cover;
+  
+ 
+  /* background-image: url(./photos/mb2.png);
+  background-position: center center;  */
+
+
+  /* background-repeat: no-repeat; */
+  /* background-repeat: repeat;
+  
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  /* background-attachment: fixed; */
+  /* scroll */
+  
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 
+  background-size: auto 100%;
+  画像が表示される前の背景 */
+  background: black;
+
+} 
+
+header{
+
+  display:flex !important;
+  position:fixed;
+   top:0;
+   left:0;
+   width: 100%; 
+   height: 50px;
+   padding: 5px;
+   background: black;
+   /* background: transparent; */
+   z-index: 2;
+  /* justify-content: center; */
+   /* align-items: center; */
+   /* ?????? */
+   /* position: relative; */
+   /* top: 0px; */
+   /* background:rgb(237, 59, 10,10); */
+   /* z-index: 2; */ 
+   /* 重なりの順序 */
+   /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25); */
+ }
+ 
+
+img.main{
+  width: 130%;
+  /* height: 100%; */
+  margin-top:2%;
+  margin-bottom: auto;
+  background-size:cover ;
+
+  /* min-width: 900px; */
+  /* max-height: 800px; */
+  /* height: 100%; */
+}
+
+img.logo{
+  position: absolute;
+  width: 20%;
+  top: 30%;
+  /* height: 20%; */
+  margin-right:40%;
+  margin-left:40%;
+  /* background-color: red; */
+  filter: invert();
+
+}
+
+.cap5 {
+  /* top:0; */
+  font-size: 30px;
+  margin-right:20%;
+  margin-left:10%;
+  margin-top:0;
+  margin-bottom: 0;
+  /* text-align: center; */
+  background:transparent;  
+  /* color: white; */
+  min-width: 100px;
+  filter: invert();
+}
+.nav{
+  padding: 10px;
+  min-width: 300px;
+  /* background-color: red; */
+}
+.menu-item {
+  list-style: none;
+  background: transparent;
+  margin-right: 20px;
+  display: inline;
+}
+
+
+
+.insta{
+  background:transparent;
+  color:black;
+  text-align: center;
+  /* width: 50%; */
+  margin:  0 0 0 auto;
+  /* 上下右左 */
+  height: 30px;
+  width: 50px;
+  min-width: 50px;
+  filter: invert();
+}
+
+.tate{
+  /* position: absolute; */
+  position:  absolute;
+  top: 50px;  
+  right:40px;
+  font-size:70px;
+  transition-property:all;
+  transition-duration: 2s; 
+  transition-timing-function :ease-out;
+  /* margin-right: auto;
+  margin-left: auto; */
+  opacity: 0.8;
+  color: rgb(75, 171, 255);
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  z-index: 1;
+  font-weight: 100;
+}
+
+/* .Cap:hover{
+  position:  absolute;     
+  top: 200px;  
+  left:50%;
+  width: 80px;
+  height: 80px;
+  width: 1000px;
+  height: 1000px;
+  font-size:100px;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  /* font-weight: 100; 
+} */
+
+
+.red{
+  margin-top: 10px;
+  background: transparent;
+  padding: 10px;
+
+}
+.red h2{
+
+  background-color: transparent;
+  filter: blur(1px);
+  width: 100%;
+  transition-property:all;
+  transition-duration: 2s;
+  /* transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68); */
+  /* transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); */
+  transition-delay: 0.6s 
+}
+
+.red h2:hover {
+  /* background-color: red; */
+  filter: blur(0);
+  width: 20%;
+  /* transform: rotate(180deg); */
+  transform:translateX(20px) translateY(20px) rotate(40deg);
+}
+
+footer{
+  display:flex !important;
+  position:fixed;
+   bottom:0;
+   left:0;
+   width: 100%; 
+   height: 50px;
+   padding: 5px;
+   background: black;
+   /* background: transparent; */
+   z-index: 2;
+ }
+.nav2{
+  padding: 10px;
+  margin-left:auto;
+}
+.menu-item2 {
+  list-style: none;
+  /* background: black; */
+  display: inline;
+  width: 100%;
+  /* background: blue; */
+  
+}
+
+/*-----  SP  ---- */
+@media screen and (max-width: 760px) {
+  /* 768pxまでの幅の場合に適応される */
+
+
+  header{
+    display: flex!important;;
+    position:fixed;
+     top:0;
+     left:0;
+     width: 100%; 
+     padding: 5px;
+     /* background:transparent; */
+     background: rgb(236, 236, 236);
+     height: auto;
+     z-index: 2;
+     padding-bottom:0 !important;
+    /* justify-content: center; */
+     /* align-items: center; */
+     /* ?????? */
+     /* position: relative; */
+     /* top: 0px; */
+     /* background:rgb(237, 59, 10,10); */
+     /* z-index: 2; */ 
+     /* 重なりの順序 */
+     /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25); */
+   }
+   
+   #nav1{
+     margin-right: 0;
+     /* margin-left: auto; */
+     /* background: green; */
+     background: transparent;
+     color:white;
+   }
+   .cap5 {
+   
+    font-size: 30px;
+    /* margin-left:10%; */
+    /* background:red;   */
+    /* color:white!important; */
+  }
+  .menu-item{
+    list-style: none;
+    background: transparent;
+    /* margin-right: 0; */
+    /* padding-left:0 ; */
+    text-align: right;
+    display: block;
+    margin-top: 20px;
+  }
+
+  .navbar-toggler{
+    filter:invert();
+  }
+
+  .insta{
+    display:none;
+   }
+
+  img.logo{
+    position: absolute;
+    width: 20%;
+    top: 30%;
+    /* height: 20%; */
+    margin-right:40%;
+    margin-left:40%;
+    /* background-color: red; */
+    filter: invert();
+  }
+ img.main{
+  position: absolute;
+  width: 90%;
+  top: 30%;
+
+  /* height: 20%; */
+  margin-right:5%;
+  margin-left:5%;
+  /* background-color: red; */
+  /* filter: invert(); */
+
+ }
+  
+
+   
+  body{
+    min-width: initial;
+    margin-top: 0;
+
+  }
+
+  #all{
+    margin-top: 10px;
+    display: block;
+  }
+
+  .tate{
+    display: none;
+  }
+  footer{
+  
+    background: rgb(236, 236, 236);
+ 
+   }
+
+}

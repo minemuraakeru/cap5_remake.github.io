@@ -1,0 +1,169 @@
+body {
+  
+  /* display: flex; */
+ /* display:block; */
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(to bottom, white, black); */
+  /* font-family: 'Ropa Sans', sans-serif; */
+  font-family: 'helvetica', sans-serif;
+  display: block;
+  
+
+  /* height: 100%; */
+  /* width:100%; */
+  /* overflow: auto; */
+  overflow-y: scroll;
+    /* overflow: hidden; */
+
+    width: 100%;
+    /* background: blue; */
+   
+    margin-top: auto;
+    margin-bottom: auto;
+    /* margin-right:20%;
+    margin-left:20%; */
+    background-color:  white;
+
+} 
+
+
+
+header{
+
+  display:flex !important;
+  position:fixed;
+   top:0;
+   left:0;
+   width: 100%; 
+   height: 30px;
+   padding: 5px;
+   background: black;
+   /* background: transparent; */
+   z-index: 2;
+  /* justify-content: center; */
+   /* align-items: center; */
+   /* ?????? */
+   /* position: relative; */
+   /* top: 0px; */
+   /* background:rgb(237, 59, 10,10); */
+   /* z-index: 2; */ 
+   /* 重なりの順序 */
+   /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25); */
+ }
+ 
+ 
+ 
+ 
+ 
+ .cap5 {
+   /* top:0; */
+   font-size: 30px;
+   margin-right:20%;
+   margin-left:10%;
+   margin-top:0;
+   margin-bottom: 0;
+   /* text-align: center; */
+   /* background:transparent;   */
+   min-width: 100px;
+ 
+ }
+ .nav{
+   padding: 10px;
+   min-width: 300px;
+   /* background-color: red; */
+ }
+ .menu-item {
+   list-style: none;
+   background: transparent;
+   margin-right: 20px;
+   display: inline;
+   
+ }
+ 
+ 
+ 
+ .insta{
+   background:transparent;
+   color:black;
+   text-align: center;
+   /* width: 50%; */
+   margin:  0 0 0 auto;
+   /* 上下右左 */
+   height: 30px;
+   width: 50px;
+   min-width: 50px;
+   filter: invert();
+ 
+ }
+   
+
+  
+
+
+/*-----  SP  ---- */
+@media screen and (max-width: 760px) {
+  /* 768pxまでの幅の場合に適応される */
+
+
+  header{
+    display: flex!important;;
+    position:fixed;
+     top:0;
+     left:0;
+     width: 100%; 
+     padding: 5px;
+     /* background:transparent; */
+     background: rgb(236, 236, 236);
+     height: auto;
+     z-index: 2;
+     padding-bottom:0 !important;
+    /* justify-content: center; */
+     /* align-items: center; */
+     /* ?????? */
+     /* position: relative; */
+     /* top: 0px; */
+     /* background:rgb(237, 59, 10,10); */
+     /* z-index: 2; */ 
+     /* 重なりの順序 */
+     /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25); */
+   }
+   
+   #nav1{
+     margin-right: 0;
+     /* margin-left: auto; */
+     /* background: green; */
+     background: transparent;
+     color:white;
+   }
+   .cap5 {
+    font-size: 30px;
+    /* margin-left:10%; */
+    /* background:red;   */
+    /* color:white!important; */
+    
+  }
+   
+
+
+  .menu-item{
+    list-style: none;
+    background: transparent;
+    /* margin-right: 0; */
+    /* padding-left:0 ; */
+    text-align: right;
+    display: block;
+    margin-top: 20px;
+  }
+
+  .navbar-toggler{
+    filter:invert();
+  }
+
+  .insta{
+    display:none;
+   }
+
+
+
+
